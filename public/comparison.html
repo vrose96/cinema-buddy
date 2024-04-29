@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Comparison Tool - Cinema Buddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.ibb.co/n1smhbh/cinema-buddy-logo-removebg-preview.png" alt="Cinema Buddy Logo" class="logo">
+        <h1 style="text-align: center;">Movie Comparison Tool</h1>
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="profile.html">Your Profile</a></li>
+            <li><a href="comparison.html">Comparison Tool</a></li>
+        </ul>
+    </nav>
+    <div class="comparison-container">
+        <div class="comparison-tool">
+            <h2>Movie Comparison Tool</h2>
+            <div class="search-container">
+                <input type="text" id="comparisonSearchBox" style="margin-right: 10px;" placeholder="Search for movies...">
+                <button onclick="searchMoviesForComparison()" style="margin-right: 10px;">Search</button>
+                <button onclick="clearComparisonSearch()" style="margin-right: 10px;">Clear Search</button>
+            </div>
+            <div id="comparisonResults" class="movies-grid"></div>
+        <footer>
+			<div class="footer-container">
+				<div class="footer-logo">
+					<img src="https://i.ibb.co/n1smhbh/cinema-buddy-logo-removebg-preview.png" alt="Cinema Buddy Logo">
+				</div>
+				<div class="footer-links">
+					<a href="index.html">Home</a>
+					<a href="about.html">About Us</a>
+					<a href="profile.html">Your Profile</a>
+                    <a href="comparison.html">Comparison Tool</a>
+				</div>
+			</footer>
+		</div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

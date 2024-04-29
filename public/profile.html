@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Buddy - Your Movie Rating App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.28.5/dist/supabase.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.ibb.co/n1smhbh/cinema-buddy-logo-removebg-preview.png" alt="Cinema Buddy Logo" class="logo">
+        <h1>Cinema Buddy Movie App</h1>
+        <h3>Personalized Movie List and Ratings</h3>
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="profile.html">Your Profile</a></li>
+            <li><a href="comparison.html">Comparison Tool</a></li>
+        </ul>
+    </nav>    
+    <div class="user-profile">
+        <img src="https://pics.craiyon.com/2023-10-03/80ed6b5effdf41f3bb385d424280523a.webp" alt="User Profile Picture" class="profile-picture">
+        <div class="user-info">
+            <h3 id="userName"></h3>
+            <p>Favorite Movie: <span id="favoriteMovie"></span></p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share.php?u=yourprofileurl" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/?url=yourprofileurl" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="top-movies">
+        <ul id="topMovieList"></ul>
+    </div>
+        <h2 style="text-align: center;">My Movie Ratings</h2>
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search for movies..." />
+            <button onclick="searchMovies()" style="margin-right: 10px;">Search</button>
+            <button onclick="clearSearch()">Clear Search</button>
+        </div>
+        <div id="searchResults" class="movies-grid"></div>
+        <div id="myMovieRatings" class="movies-list"></div>
+    </div>
+    <h2 style="text-align: center;">Must See Movies</h2>
+    <div id="mustSeeMovieList" class="movies-grid"></div>
+    <div id="confirmationMessage" style="display: none; text-align: center;"></div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://i.ibb.co/n1smhbh/cinema-buddy-logo-removebg-preview.png" alt="Cinema Buddy Logo">
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="profile.html">Your Profile</a>
+                <a href="comparison.html">Comparison Tool</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

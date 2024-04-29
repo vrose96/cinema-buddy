@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Buddy - Your Movie Rating App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.42.7/dist/umd/supabase.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.ibb.co/n1smhbh/cinema-buddy-logo-removebg-preview.png" alt="Cinema Buddy Logo" class="logo">
+        <h1>Cinema Buddy Movie App</h1>
+        <h3>Personalized Movie List and Ratings</h3>
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="profile.html">Your Profile</a></li>
+            <li><a href="comparison.html">Comparison Tool</a></li>
+            <div class="navbar-right">
+                <button onclick="window.location.href='login.html';">Login</button>
+            </div>
+        </ul>
+    </nav>
+    <h1 style="text-align: center;">Hot Movies Right Now</h1>
+    <div class="movies">
+        <div id="moviesContainer" class="movies-list"></div>
+        <div id="confirmationMessage" style="display: none;"></div>
+        <div id="mustSeeMovieList"></div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://i.ibb.co/n1smhbh/cinema-buddy-logo-removebg-preview.png" alt="Cinema Buddy Logo">
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="profile.html">Your Profile</a>
+                <a href="comparison.html">Comparison Tool</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
